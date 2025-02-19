@@ -1,0 +1,412 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  gap: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h3, h5, p, a {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 50px;
+  letter-spacing: -1%;
+}
+
+h2 {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43.2px;
+  letter-spacing: 0%;
+  color: rgb(0, 72, 206);
+  margin-bottom: 40px;
+}
+
+h4 {
+  font-family: "Merriweather";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+h5 {
+  font-family: "Merriweather";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+}
+
+p {
+  font-family: "Golos Text";
+  font-weight: 400;
+  margin: 0;
+  width: 100%;
+}
+
+a {
+  font-family: "Golos Text";
+  font-weight: 400;
+  text-decoration: none;
+  line-height: normal;
+  margin: auto 0;
+  transition: all linear 0.3s;
+}
+
+a:hover {
+  color: #548FFF;
+}
+
+button {
+  width: 296px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, rgb(0, 72, 206) 0%, rgb(212, 223, 248) 200%);
+  font-family: "Golos Text";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #fff;
+  padding: 20px 0;
+}
+button svg {
+  margin-left: 20px;
+}
+
+button:hover {
+  background: rgb(0, 72, 206);
+  cursor: pointer;
+}
+
+button:active {
+  background: linear-gradient(0deg, #003AA6, #003AA6);
+}
+
+.M {
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.M1 {
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0%;
+  text-decoration: none;
+  color: #0048CE;
+}
+
+.M2 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.M4 {
+  font-family: "Golos Text";
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  color: #fff;
+  margin-top: 6px;
+}
+
+.S2 {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(125, 140, 180);
+}
+
+.logo {
+  font-family: "Merriweather";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+  letter-spacing: -1%;
+  color: #0048CE;
+}
+
+.sc_btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  border-radius: 50%;
+  background-color: #0048CE;
+}
+.sc_btn svg {
+  margin: auto;
+}
+
+.sc_btn:hover {
+  background-color: #548FFF;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+header .container {
+  height: 100%;
+}
+header .container .header_logo {
+  width: 100%;
+  max-width: 111px;
+  margin: auto 0;
+}
+header .container .header_logo p {
+  margin: 0;
+}
+header .container .header_nav {
+  width: 100%;
+  max-width: 593px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+header .container .header_nav a {
+  padding: 6px 20px;
+}
+header .container .header_nav .nav_submenu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  z-index: 3;
+  display: none;
+  flex-direction: column;
+  border-top: 1px solid #D9E4F8;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  background: #fff;
+}
+header .container .header_nav .nav_submenu a:first-child::after {
+  display: none;
+}
+header .container .header_nav .nav_submenu.open {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+header .container .header_nav a:first-child::after {
+  content: "";
+  width: 7px;
+  height: 5px;
+  margin-left: 6.07px;
+  background-image: url("data:image/svg+xml,%3Csvg width='7' height='5' viewBox='0 0 7 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.5 0.5L3.50163 3.5L0.503263 0.5' stroke='%230048CE'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+header .container .header_nav a:first-child:hover::after {
+  transform: rotate(180deg);
+}
+header .container .header_social {
+  width: 100%;
+  max-width: 256px;
+  display: flex;
+  justify-content: space-between;
+}
+header .container .header_burger {
+  display: none;
+}
+header .container .header_menu {
+  display: none;
+}
+
+.main {
+  height: 636px;
+  margin-bottom: 92px;
+}
+.main .container .main_banner {
+  width: 100%;
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background-image: url("../img/main-baner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.96;
+  position: relative;
+}
+.main .container .main_banner h1, .main .container .main_banner p {
+  color: #fff;
+  margin: 0;
+}
+.main .container .main_banner h1 {
+  width: 654px;
+  margin-bottom: 24px;
+}
+.main .container .main_banner p {
+  width: 560px;
+}
+.main .container .main_banner .baner_social {
+  width: 100%;
+  display: flex;
+  margin-top: 74px;
+}
+.main .container .main_banner .baner_social a {
+  margin: auto 0;
+  margin-right: 13px;
+}
+.main .container .main_banner .baner_social button {
+  margin-right: 49px;
+}
+.main .container .main_banner .banner_desc {
+  position: absolute;
+  bottom: 80px;
+  right: 106px;
+  width: 158px;
+  display: flex;
+  flex-direction: column;
+}
+
+.photos {
+  display: flex;
+}
+.photos .container {
+  display: flex;
+  flex-direction: column;
+}
+.photos .container .photo_block {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.photos .container .photo_block .block_photo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.photos .container .photo_block .block_photo .photo_card {
+  width: 25%;
+  max-width: 290px;
+  height: 360px;
+  box-shadow: 0px 14px 44px 0px rgba(125, 140, 180, 0.07);
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+.photos .container .photo_block .block_photo .photo_card .card_img {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+}
+.photos .container .photo_block .block_photo .photo_card .card_img img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.photos .container .photo_block .block_photo .photo_card h5 {
+  margin-top: 14px;
+}
+.photos .container .photo_block .block_photo .photo_card .card_links {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.photos .container .photo_block .block_photo .photo_card .card_links a {
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #F1F4FD;
+  padding: 70px 0 50px 0;
+}
+footer .container {
+  justify-content: space-between;
+}
+footer .container .footer_left {
+  width: 100%;
+  max-width: 315px;
+}
+footer .container .footer_left .logo {
+  margin: 0;
+}
+footer .container .footer_left .left_contacts {
+  margin-top: 110px;
+  margin-bottom: 15px;
+}
+footer .container .footer_left .left_contacts p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+footer .container .footer_left .left_social {
+  display: flex;
+}
+footer .container .footer_left .left_social .sc_btn {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+footer .container .footer_right {
+  width: 100%;
+  max-width: 845px;
+}
+footer .container .footer_right .right_nav {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .footer_right .right_nav .nav_block {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .footer_right .right_nav .nav_block a {
+  padding: 6px 20px;
+  margin: 0;
+}
+footer .container .footer_right .right_nav .nav_block a:hover {
+  background: #fff;
+  border-radius: 10px;
+}
+footer .container .footer_right .right_nav .nav_block p {
+  color: #799EE5;
+  padding: 6px 20px;
+  margin: 0;
+}
+footer .container .footer_right .right_nav_mob {
+  display: none;
+}
+footer .container .footer_right .right_rools {
+  margin-top: 140px;
+}
+footer .container .footer_right .right_rools p {
+  font-family: "Golos Text";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #0048CE;
+  opacity: 0.5;
+}/*# sourceMappingURL=Style.css.map */
